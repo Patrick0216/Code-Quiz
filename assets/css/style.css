@@ -1,0 +1,30 @@
+body {
+    background-color: tan;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin: 20px 5% 0;
+    width: 90%;
+    height: 75px;
+    font-size: 32px;
+    justify-content: center;
+    text-align: center;
+    background-color: dimgray;
+}
+
+.body-block {
+    display: block;
+    margin: 45px 15% 45px;
+    padding: 5px;
+    border: 5px;
+    border-style: inset solid;
+    background-color: dimgray;
+}
+
+.instructions {
+    padding: 30px;
+    text-align: center;
+}
+
