@@ -1,59 +1,57 @@
-//Global Score variable
-var score = 0;
+//start screen with rules
+let startpannel = document.querySelector("#startpannel");
+let start = document.querySelector("#start");
+//quiz screen with questions
+let quizpannel1 = document.querySelector("#quizpannel1");
+let quizpannel2 = document.querySelector("#quizpannel2");
+let nextQ = document.querySelector("#nextQ");
+let Qprompt = document.getElementById("#Qprompt");
+//answers
 
-//Global question varibles
+let questions = [{
+    Qprompt: "What does HTML stand for?",
+    answer1: "Hyperlinks and Text Markup Language",
+    answer2: "Hyper Text Markup Language",
+    answer3: "Hyper Text Making Language",
+    answer4: "Hyper Text Mark Language",
+    answer: 1
+},
+            {
+	Qprompt: "What does CSS stand for?",
+    answer1: "Colorful StyleSheet",
+    answer2: "Creative Style Sheet",
+    answer3: "Cascading Style Sheet",
+    answer4: "Computer Style Sheet",
+    answer: 2
 
-var question1 = "hello dis is a test";
-var question2 = "hello dis is anoda test";
-var question3 = "uh anoda one";
-var question4 = "um hi there";
-var question5 = "ok bye dork";
+}];
 
-//Global questions array
+let answer = Array [
+	"answer1",
+ 	"answer2",
+ 	"answer3",
+ 	"answer4"
+]
 
-const array_questions = [		
-		question1, 
-		question2, 
-		question3, 
-		question4, 
-		question5
-];
+let answer1 = document.querySelector("#answer1");
+let answer2 = document.querySelector("#answer2");
+let answer3 = document.querySelector("#answer3");
+let answer4 = document.querySelector("#answer4");
 
-//Array question1 answers
-const array_question1ans = [
-	"this is a test?",
-	"this is not a test?",
-	"why are you asking me questions?",
-	"uhhh... whats going on?"
-];
 
-const array_question2ans = [
-	"this is a test?",
-	"this is not a test?",
-	"why are you asking me questions?",
-	"uhhh... whats going on?"
-];
+start.addEventListener("click", () => {
+    startpannel.style.display = "none";
+    quizpannel1.style.display = "block";
+});
 
-const array_question3ans = [
-	"this is a test?",
-	"this is not a test?",
-	"why are you asking me questions?",
-	"uhhh... whats going on?"
-];
+nextQ.addEventListener("click", () => {
+    quizpannel1.style.display = "none";
+    quizpannel2.style.display = "block";
+});
 
-const array_question4ans = [
-	"this is a test?",
-	"this is not a test?",
-	"why are you asking me questions?",
-	"uhhh... whats going on?"
-];
-
-const array_question5ans = [
-	"this is a test?",
-	"this is not a test?",
-	"why are you asking me questions?",
-	"uhhh... whats going on?"
-];
+answer1.addEventListener("click", () => {
+    console.log(answer);
+});
 
 
 /*---------------------------------------------------------

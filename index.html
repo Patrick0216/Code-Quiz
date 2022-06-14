@@ -6,22 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
     <title>Code Quiz</title>
 </head>
 <body>
-    <header>
-        Welcome to the Code Quiz
-    </header>
+    <div class="container">
+        
+        <div id="startpannel">
 
-    <div class="body-block">
-        <div class="instructions">
-            <p class=" instructions-text" id="info">this is a paragraph for filler in the instructions section of this website so i have somthing as a baseline that i can edit and manilpulate later on to effect what my webpage will look like and i need some filler text to do so so here you are reading my filler text because somehow i gorabbed your attention by reading this and at this point i have you figured out and you and i both know it. ;)</p>
+       <!-- rules / start screen -->  
+
+                <h2>Rules</h2>
+                <h3>1. This is a timed quiz so youll only have 15 seconds for each question.</h3>
+                <h3>2. once you answer the question that answer is locked and you cannot go back.</h3>
+                <h3>3. This quiz will give you a score at the end out of 100 and you will be able to save it with you innitals</h3>
+                <h3>4. enjoy it because i almost ripped my hair out trying to get it to work</h3>
+
+        <!-- Start button -->     
+
+                    <div id="start">
+                        <h1>Start Quiz</h1>
+                    </div>
         </div>
-    </div>
 
-    <script href="./assets/javascript/index.js"></script>
+        <div id="quizpannel1">
+
+            <h4 id="Qprompt"></h4>
+            <h3 id="answer1">answer 1</h3>
+            <h3 id="answer2">answer 2</h3>
+            <h3 id="answer3">answer 3</h3>
+            <h3 id="answer4">answer 4</h3>
+
+            <div id="nextQ">
+                <h1>Next</h1>
+            </div>
+            
+        </div>
+
+        <div id="quizpannel2">
+
+            <h4 id="questionprompt">question 2</h4>
+            <h3 id="answer1">answer 1</h3>
+            <h3 id="answer2">answer 2</h3>
+            <h3 id="answer3">answer 3</h3>
+            <h3 id="answer4">answer 4</h3>
+
+            <div id="nextQ">
+                <h1>Next</h1>
+            </div>
+            
+        </div>
+          
+    </div>
+    <!-- Questions sheet -->
+    <script src="./assets/javascript/questions.js"></script>
+    <!-- actual script -->
+    <script src="./assets/javascript/index.js"></script>
+  
 </body>
 </html>
