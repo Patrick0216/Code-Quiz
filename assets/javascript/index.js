@@ -8,35 +8,8 @@ let nextQ = document.querySelector("#nextQ");
 let Qprompt = document.getElementById("#Qprompt");
 //answers
 
-let questions = [{
-    Qprompt: "What does HTML stand for?",
-    answer1: "Hyperlinks and Text Markup Language",
-    answer2: "Hyper Text Markup Language",
-    answer3: "Hyper Text Making Language",
-    answer4: "Hyper Text Mark Language",
-    answer: 1
-},
-            {
-	Qprompt: "What does CSS stand for?",
-    answer1: "Colorful StyleSheet",
-    answer2: "Creative Style Sheet",
-    answer3: "Cascading Style Sheet",
-    answer4: "Computer Style Sheet",
-    answer: 2
 
-}];
 
-let answer = Array [
-	"answer1",
- 	"answer2",
- 	"answer3",
- 	"answer4"
-]
-
-let answer1 = document.querySelector("#answer1");
-let answer2 = document.querySelector("#answer2");
-let answer3 = document.querySelector("#answer3");
-let answer4 = document.querySelector("#answer4");
 
 
 start.addEventListener("click", () => {
@@ -49,11 +22,31 @@ nextQ.addEventListener("click", () => {
     quizpannel2.style.display = "block";
 });
 
+
+
 answer1.addEventListener("click", () => {
     console.log(answer);
 });
 
+let answer1 = document.querySelector("#answer1");
+let answer2 = document.querySelector("#answer2");
+let answer3 = document.querySelector("#answer3");
+let answer4 = document.querySelector("#answer4");
 
+let questions = [{
+    Qprompt: "What does HTML stand for?",
+    answer1: "Hyperlinks and Text Markup Language",
+    answer2: "Hyper Text Markup Language",
+    answer3: "Hyper Text Making Language",
+    answer4: "Hyper Text Mark Language",
+},
+            {
+	Qprompt: "What does CSS stand for?",
+    answer1: "Colorful StyleSheet",
+    answer2: "Creative Style Sheet",
+    answer3: "Cascading Style Sheet",
+    answer4: "Computer Style Sheet",
+}];
 /*---------------------------------------------------------
 Global Score variable
 	var score = 100

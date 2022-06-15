@@ -34,4 +34,4 @@
 
     - link to pages: https://patrick0216.github.io/Code-Quiz/
 
-    - image of the site:(challenge-3\Password-Generator\assets\images\webbysite-for-skool.PNG)
+    - image of the site: (https://user-images.githubusercontent.com/103669174/173689829-02277cae-d7d0-40b8-9957-de5d4beaa5ec.PNG)
